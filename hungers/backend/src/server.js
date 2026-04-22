@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import recipeRoute from "./routes/recipe.js";
+import router from "./routes/recipe.js";
 
 const app = express();
 
@@ -9,5 +9,5 @@ app.use(express.json());
 
 
 
-app.use("/api", recipeRoute);
+app.use("/api", router);
 export default app;
